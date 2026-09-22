@@ -1,5 +1,6 @@
 # CourseGraph Agent — Enterprise Hybrid GraphRAG
 
+[![Live Demo](https://img.shields.io/badge/Streamlit%20Cloud-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://hybrid-graph-rag-ugvik35qjkrxc8zqmdappum.streamlit.app/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-009688.svg)](https://fastapi.tiangolo.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.6+-orange.svg)](https://langchain-ai.github.io/langgraph/)
@@ -8,6 +9,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-37%20Passed-brightgreen.svg)]()
 [![Evaluation](https://img.shields.io/badge/RAG%20Triad-100%25%20Faithfulness-success.svg)]()
+
+> 🚀 **Live Interactive Demo:** [hybrid-graph-rag.streamlit.app](https://hybrid-graph-rag-ugvik35qjkrxc8zqmdappum.streamlit.app/)
 
 **A production-grade Hybrid Graph RAG system for explainable university course planning, prerequisite verification, and constraint-based graduation scheduling.**
 
