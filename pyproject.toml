@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "coursegraph-agent"
+version = "0.1.0"
+description = "Enterprise-grade Hybrid Graph RAG for explainable university course planning"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116,<1",
+  "httpx>=0.28,<1",
+  "langchain-core>=0.3.70,<2",
+  "langchain-google-genai>=2.0,<5",
+  "langchain-openai>=0.3,<1",
+  "langgraph>=0.6,<2",
+  "neo4j>=5.28,<7",
+  "pydantic-settings>=2.10,<3",
+  "python-dotenv>=1.1,<2",
+  "requests>=2.32,<3",
+  "streamlit>=1.48,<2",
+  "uvicorn[standard]>=0.35,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4,<9",
+  "pytest-cov>=6.2,<7",
+]
+
+[project.scripts]
+coursegraph-seed = "coursegraph.seed:main"
+coursegraph-eval = "coursegraph.evaluation:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/coursegraph"]
+
+[tool.hatch.build]
+exclude = [
+  ".uv-cache/**",
+  ".venv/**",
+  "dist/**",
+  "artifacts/*.json",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q --disable-warnings"
+testpaths = ["tests"]
+markers = ["integration: requires a running Neo4j instance"]
+
+[tool.coverage.run]
+source = ["coursegraph"]

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">CourseGraph Agent user interface</title>
+  <desc id="desc">Dark interface showing a verified learning path, graph traversal, and catalog citations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#101827"/></linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="1440" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="295" height="900" fill="#091321"/>
+  <text x="36" y="58" fill="#e2e8f0" font-family="Arial" font-weight="700" font-size="22">🕸 CourseGraph</text>
+  <text x="36" y="109" fill="#94a3b8" font-family="Arial" font-size="13" letter-spacing="2">TRY AN EXAMPLE</text>
+  <g font-family="Arial" font-size="14">
+    <rect x="26" y="132" width="242" height="67" rx="12" fill="#12243a" stroke="#22d3ee"/>
+    <text x="42" y="159" fill="#e0f2fe">What is the learning path</text><text x="42" y="181" fill="#e0f2fe">to AI302?</text>
+    <rect x="26" y="211" width="242" height="58" rx="12" fill="#0d1b2c"/><text x="42" y="246" fill="#94a3b8">Can I take AI302?</text>
+    <rect x="26" y="281" width="242" height="58" rx="12" fill="#0d1b2c"/><text x="42" y="316" fill="#94a3b8">Find knowledge graphs</text>
+  </g>
+  <circle cx="43" cy="832" r="6" fill="#34d399"/><text x="59" y="838" fill="#a7f3d0" font-family="Arial" font-size="14">Graph online · Neo4j</text>
+
+  <g transform="translate(343 52)" font-family="Arial">
+    <text x="0" y="18" fill="#67e8f9" font-size="13" font-weight="700" letter-spacing="2">VECTORLESS GRAPH RAG</text>
+    <text x="0" y="79" fill="#f8fafc" font-size="48" font-weight="800">CourseGraph Agent</text>
+    <text x="0" y="116" fill="#9fb0c8" font-size="17">Explainable course planning with catalog citations and visible graph traversal.</text>
+    <rect x="0" y="153" width="1010" height="60" rx="13" fill="#0d1929" stroke="#2b3b53"/>
+    <text x="22" y="190" fill="#e2e8f0" font-size="16">What is the learning path to AI302?</text>
+    <rect x="820" y="222" width="190" height="48" rx="12" fill="url(#hero)"/>
+    <text x="858" y="253" fill="#06202a" font-size="15" font-weight="700">Trace the graph</text>
+
+    <g transform="translate(0 299)" filter="url(#shadow)">
+      <rect width="316" height="91" rx="14" fill="#111d2d" stroke="#26364d"/><text x="22" y="31" fill="#8fa3bd" font-size="13">VERIFIED</text><text x="22" y="68" fill="#6ee7b7" font-size="25" font-weight="700">Yes</text>
+      <rect x="347" width="316" height="91" rx="14" fill="#111d2d" stroke="#26364d"/><text x="369" y="31" fill="#8fa3bd" font-size="13">SOURCES</text><text x="369" y="68" fill="#f8fafc" font-size="25" font-weight="700">12</text>
+      <rect x="694" width="316" height="91" rx="14" fill="#111d2d" stroke="#26364d"/><text x="716" y="31" fill="#8fa3bd" font-size="13">LATENCY</text><text x="716" y="68" fill="#f8fafc" font-size="25" font-weight="700">18 ms</text>
+    </g>
+
+    <text x="0" y="442" fill="#f1f5f9" font-size="22" font-weight="700">Answer</text>
+    <rect x="0" y="458" width="1010" height="91" rx="14" fill="#0c1727" stroke="#25354b"/>
+    <text x="20" y="489" fill="#cbd5e1" font-size="15">A prerequisite-respecting path to <tspan font-weight="700" fill="#fff">AI302</tspan> is:</text>
+    <text x="20" y="526" fill="#67e8f9" font-size="17" font-weight="700">CS101 → CS102 → CS201 → AI101 → AI201 → AI301 → AI302</text>
+
+    <text x="0" y="597" fill="#f1f5f9" font-size="22" font-weight="700">Supporting graph paths</text>
+    <text x="535" y="597" fill="#f1f5f9" font-size="22" font-weight="700">Catalog citations</text>
+    <g transform="translate(0 616)">
+      <rect width="494" height="78" rx="13" fill="#0b1727" stroke="#26364d"/>
+      <text x="18" y="46" fill="#dff8ff" font-size="15"><tspan font-weight="700">AI302</tspan><tspan fill="#5eead4"> —REQUIRES→ </tspan><tspan font-weight="700">AI301</tspan></text>
+      <rect y="91" width="494" height="78" rx="13" fill="#0b1727" stroke="#26364d"/>
+      <text x="18" y="137" fill="#dff8ff" font-size="15"><tspan font-weight="700">AI302</tspan><tspan fill="#5eead4"> —REQUIRES→ </tspan><tspan font-weight="700">AI210</tspan></text>
+    </g>
+    <g transform="translate(535 616)">
+      <rect width="475" height="78" rx="13" fill="#0b1727" stroke="#26364d"/>
+      <rect width="4" height="78" rx="2" fill="#22d3ee"/>
+      <text x="20" y="29" fill="#67e8f9" font-size="14" font-weight="700">catalog:AI302</text><text x="20" y="54" fill="#a8b6ca" font-size="13">Generative AI Systems · 3 credits</text>
+      <rect y="91" width="475" height="78" rx="13" fill="#0b1727" stroke="#26364d"/>
+      <rect y="91" width="4" height="78" rx="2" fill="#22d3ee"/>
+      <text x="20" y="120" fill="#67e8f9" font-size="14" font-weight="700">catalog:AI301</text><text x="20" y="145" fill="#a8b6ca" font-size="13">Deep Learning · 3 credits</text>
+    </g>
+  </g>
+</svg>
+
